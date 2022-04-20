@@ -4,6 +4,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #F5CB5C;
+    font-family: Helvetica Neue;
 }
 header{
     text-align: center;
@@ -14,6 +15,8 @@ header{
     -1px 1px 0 #242423,
     1px 1px 0 #242423;
 }
+
+/* Body of the calculator */
 .main{
     display: flex;
     align-items: center;
@@ -39,14 +42,63 @@ header{
     width: 400px;
     height: 90px;
     background-color: #f8f9fa;
+    font-size: 30px;
 }
-.inputs{
-    display: flex;
+.topDisp{
+    height: 43px;
+    border: 1px solid red;
+    text-align: right;
+}
+.bottomDisp{
+    height: 43px;
+    border: 1px solid red;
+    text-align: right;
+}
 
+/* Functions of the calculator */
+.daily{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .days{
     color: #f8f9fa;
     font-weight: bold;
     font-size: 22px;
-    padding-left: 20px;
+    padding-left: 25px;
+}
+.daysInput{
+    padding-right: 35px;
+}
+.labor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.laborInput{
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 40px;
+}
+.addLabor{
+    padding-right: 70px;
+}
+.button{
+    width: 100px; 
+    height: 40px;
+    border: 1px solid black;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333533
+}
+#reset{
+    margin-left: 65px;
+}
+#calculate{
+    margin-right: 65px;
 }

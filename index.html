@@ -15,14 +15,57 @@
       <div class="calcBody">
         <div class="upper">
           <div class="display">
-            <div class="topDisp"></div>
-            <div class="bottomDisp"></div>
+            <div class="topDisp" id="top"></div>
+            <div class="bottomDisp" id="bottom"></div>
           </div>
         </div>
+
         <br />
         <br />
-        <div class="inputs">
-          <div class="days">Days of Storage:</div>
+
+        <div class="mainInputs">
+          <div class="daily">
+            <div class="days">Days of Storage:</div>
+            <div class="daysInput">
+              <input
+                type="number"
+                min="1"
+                placeholder="Enter a number:"
+                id="daily"
+                value="1"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+
+          <div class="labor" id="labor">
+            <div class="laborInput" id="inputLabor">Add Labor:</div>
+            <div class="addLabor">
+              <input class="button" type="button" value="Labor" id="LA" />
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          <div class="labor" id="afterHours">
+            <div class="laborInput" id="inputAH">Add After Hours:</div>
+            <div class="addLabor">
+              <input class="button" type="button" value="After Hours" id="AH" />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+
+          <div class="labor" id="calc">
+            <div class="button" id="reset">Reset</div>
+            <div class="button" id="calculate">Calculate</div>
+          </div>
         </div>
       </div>
     </div>
