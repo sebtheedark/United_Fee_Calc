@@ -8,6 +8,7 @@ const display = document.getElementById('bottom');
 // Calculate Fee's
 function dailyCalc() {
     let days = document.getElementById("daily").value; // Amount of days
+
     const day = 61.60; // $61.60 is one day of storage, 56 + 10% city tax (5.60)
     const tow = 185; // $185 is the standard tow fee
     
@@ -26,11 +27,12 @@ function calculate() {
 
 function reset() {
     let days = document.getElementById("daily").value; // Amount of days
-    
-    days.value = '';
+
     display.innerHTML = ''; 
     console.log('refresh');
 }
+
+function afterHours()
 
 
 
