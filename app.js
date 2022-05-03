@@ -1,9 +1,6 @@
 // Variables
-const labor = document.getElementById('LA');
-const afterHours = document.getElementById('AH');
-
 const topDisp = document.getElementById('top');
-const display = document.getElementById('bottom');
+const bttmDisp = document.getElementById('bottom');
 
 // Calculate Fee's
 function dailyCalc() {
@@ -21,19 +18,30 @@ function dailyCalc() {
 
 // Caluclate Function
 function calculate() {
-    display.innerHTML = dailyCalc();
+    let main = dailyCalc();
+
+    let top = topDisp.innerHTML; 
+    let bttom = bttmDisp.innerHTML; 
+
+    bttmDisp.innerHTML = +main + +top; 
     console.log('click');
+    console.log(bttom)
 }
 
 function reset() {
     let days = document.getElementById("daily").value; // Amount of days
 
-    display.innerHTML = ''; 
+    bttmDisp.innerHTML = ''; 
+    topDisp.innerHTML = '';
     console.log('refresh');
 }
 
-function afterHours()
-
+function afterHour() {
+    let AH = 92.50
+    topDisp.innerHTML = AH;
+    
+    console.log('afterhours');
+}
 
 
 
