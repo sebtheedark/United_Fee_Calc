@@ -1,10 +1,11 @@
 body{
     padding: 0;
     margin: 0; 
-    height: 100%;
-    width: 100%;
-    background-color: #F5CB5C;
+    height: auto;
+    width: auto;
+    background-color: #333533;
     font-family: Helvetica Neue;
+    overflow: hidden;
 }
 header{
     text-align: center;
@@ -26,8 +27,8 @@ header{
 }
 .calcBody{
     border-radius: 15px;
-    border: 2px solid #242423;
-    width: 450px;
+    border: 0px solid #242423;
+    width: 430px;
     height: 600px;
     background-color: #333533;
 }
@@ -39,19 +40,19 @@ header{
     border-radius: 10px;
     margin-top: 20px;
     border: 2px solid #242423;
-    width: 400px;
+    width: 375px;
     height: 90px;
     background-color: #f8f9fa;
     font-size: 30px;
 }
 .topDisp{
     height: 43px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: right;
 }
 .bottomDisp{
     height: 43px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: right;
 }
 

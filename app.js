@@ -24,24 +24,32 @@ function calculate() {
     let bttom = bttmDisp.innerHTML; 
 
     bttmDisp.innerHTML = +main + +top; 
+    topDisp.innerHTML = '';
+
+    let bttm = bttmDisp.innerHTML;
+
+    bttmDisp.innerHTML = bttm;
+    console.log(bttm)
+
     console.log('click');
-    console.log(bttom)
 }
 
-function reset() {
-    let days = document.getElementById("daily").value; // Amount of days
-
-    bttmDisp.innerHTML = ''; 
-    topDisp.innerHTML = '';
-    console.log('refresh');
+function labor() {
+    let LA = 92.50; 
+    topDisp.innerHTML = LA; 
+    console.log('labor');
 }
 
 function afterHour() {
     let AH = 92.50
     topDisp.innerHTML = AH;
-    
     console.log('afterhours');
 }
 
-
-
+// Resets all paramenters
+function reset() { 
+    document.getElementById("daily").value = ''; // Amount of days
+    bttmDisp.innerHTML = ''; 
+    topDisp.innerHTML = '';
+    console.log('refresh');
+}
