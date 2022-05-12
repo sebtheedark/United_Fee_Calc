@@ -27,7 +27,7 @@ header{
 }
 .calcBody{
     border-radius: 15px;
-    border: 0px solid #242423;
+    border: 1px solid #242423;
     width: 430px;
     height: 600px;
     background-color: #333533;
@@ -84,6 +84,12 @@ header{
 }
 .addLabor{
     padding-right: 70px;
+}
+.seventy{
+    padding-left: 15px;
+}
+.hundred{
+    padding-right: 20px;
 }
 .button{
     width: 100px; 
