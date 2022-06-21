@@ -54,8 +54,16 @@ header{
     height: 43px;
     /*border: 1px solid red;*/
     text-align: right;
+    display: flex;
 }
-
+.leftDisp{
+    width: 50%;
+    border: 1px solid red;
+}
+.rightDisp{
+    width: 50%;
+    border: 1px solid red;
+}
 /* Functions of the calculator */
 .daily{
     display: flex;

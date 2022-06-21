@@ -1,6 +1,8 @@
 // Variables
 const topDisp = document.getElementById('top');
 const bttmDisp = document.getElementById('bottom');
+const lDisp = document.getElementById('left');
+const rDisp = document.getElementById('right')
 
 // Calculate Fee's
 function dailyCalc() {
@@ -19,19 +21,18 @@ function dailyCalc() {
 // Caluclate Function
 function calculate() {
     let main = dailyCalc();
+    let top = topDisp.innerHTML; // Displays input from Labor, After Hours, Lien on top disp
+    let rbtm = rDisp.innerHTML; // Displays calculated totals to the bottom
+    let rtotal = +top + +rbtm; // Totals the total of whatever is on top + bottom
+    let ;
 
-    let top = topDisp.innerHTML; 
-    let bttom = bttmDisp.innerHTML; 
-
-    bttmDisp.innerHTML = +main + +top; 
-    topDisp.innerHTML = '';
-
-    let bttm = bttmDisp.innerHTML;
-
-    bttmDisp.innerHTML = bttm;
+    rDisp.innerHTML = rtotal; // Calculates & displays total from main func & top disp
+    topDisp.innerHTML = ''; // resets top disp values
+    
+    let bttm = r.innerHTML; // displays value in console
     console.log(bttm)
 
-    console.log('click');
+    console.log('sum');
 }
 
 function labor() {
@@ -44,6 +45,17 @@ function afterHour() {
     let AH = 92.50
     topDisp.innerHTML = AH;
     console.log('afterhours');
+}
+
+function seventy() {
+    let sev = 70
+    topDisp.innerHTML = sev; 
+    console.log('$seventy');
+}
+function hundered() {
+    let hun = 100 
+    topDisp.innerHTML = hun; 
+    console.log('$hundered')
 }
 
 // Resets all paramenters
